@@ -3,9 +3,22 @@ body {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 .header {
+  transition: .3s;
   background-color: #D5DBE5;
   z-index: 1;
   height: 60px;
+  &:hover{
+    transition: .3s;
+    height: 120px;
+    #key-logo {
+      transition: .3s;
+      display: none;
+    }
+    .login-form{
+      transition: .3s;
+      opacity: 1;
+    }
+  }
 }
 .nav-menu {
   transition: .1s;
@@ -100,3 +113,23 @@ h2 {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 15px;
 }
+
+
+
+#key-logo{
+  cursor: pointer;
+  z-index: 5;
+  position: absolute;
+  left: 97%;
+  top: 9px;
+  margin: 10px;
+}
+
+.login-form{
+  transition: .3s;
+  position: absolute;
+  left: 87%;
+  opacity: 0;
+}
+
+
